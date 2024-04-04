@@ -48,7 +48,7 @@ class Student(admin.ModelAdmin):
 
 ## OUTPUT
 
-![alt text](../../project5/app5/Output.png)
+![Output](https://github.com/Hemanath08/ORM/assets/151807176/de5eb750-d728-4b39-9690-66b664068491)
 
 
 ## RESULT
