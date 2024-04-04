@@ -24,11 +24,31 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 
-Include your code here
+models.py
+
+from django.db import models
+
+class Student(models.Model):
+    stdid=models.IntegerField()
+    stdname=models.CharField(max_length=30)
+    dept=models.CharField(max_length=20)
+    cgpa=models.FloatField()
+    aadhar=models.BigIntegerField(null=True)
+
+admin.py
+
+from django.contrib import admin
+
+from .models import Student
+admin.site.register(Student)
+
+
+class Student(admin.ModelAdmin):
+    list_display=('Stdid','Stdname','Dept','Cgpa','Aadhar')
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![alt text](../../project5/app5/Output.png)
 
 
 ## RESULT
